@@ -2,11 +2,14 @@ require 'dish'
 
 describe Dish do
 
-let(:dish) {Dish.new}
+let(:dish) {Dish.new("Chips", 1)}
 
-it "should create a dish and its cost" do 
-	expect(dish(name, price)).to be true 
-	
+	it "should create a dish" do 
+		expect(dish.name).to eq "Chips" 
+	end
+
+	it "should list the price of the dish" do
+		expect(dish.price).to eq 1
 	end
 
 end
