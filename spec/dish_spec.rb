@@ -8,7 +8,7 @@ let(:dish) {Dish.new("Chips", 1)}
 		expect(dish.name).to eq "Chips" 
 	end
 
-	it "should list the price of the dish" do
+	it "should know the price of the dish" do
 		expect(dish.price).to eq 1
 	end
 

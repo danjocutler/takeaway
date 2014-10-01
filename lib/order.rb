@@ -12,8 +12,4 @@ class Order
 		@items.count
 	end
 
-	def grand_total
-		@items.inject{|accumulator, element| accumulator + element}
-		# @items.map {|item| item.total}.inject (&:+) } 
-	end
 end

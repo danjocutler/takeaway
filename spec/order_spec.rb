@@ -3,10 +3,17 @@ require 'order'
 describe Order do 
 	
 	let(:order) {Order.new}
-	let(:item) {"chips"}
+	let(:item) {Item.new}
 
 	it "should add items to the customer's order" do
 		order.add("chips")
-		expect(item_count).to eq 1
+		expect(order.item_count).to eq 1
+	end
+
+	it "should tally the total quantity of dishes ordered" do
+		order.add("chips")
+		order.add("burger")
+		2.times {order.add("coke")}
+		expect(order.item_count).to eq 4
 	end
 end
