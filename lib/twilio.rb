@@ -1,4 +1,4 @@
-# class Twilio
+class Text
 
 require 'twilio-ruby'
 
@@ -14,4 +14,5 @@ require 'twilio-ruby'
       from: "+441412801638",
       body: "Hello there! Thank you for your order. It should be delivered to you by #{Time.now + (60 * 60).strftime("%H:%M")}"
     )
+end
 

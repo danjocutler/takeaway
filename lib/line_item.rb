@@ -12,4 +12,6 @@ class LineItem
 		@sub_total = dish.price * quantity
 	end
 
+	
+
 end

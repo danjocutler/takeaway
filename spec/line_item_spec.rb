@@ -11,5 +11,10 @@ describe LineItem do
 		line_item.line_total(burger, 3)
 		expect(line_item.sub_total).to eq 7.5
 	end
+
+	xit 'should add lines to the order' do
+
+	end
+		
 	
 end

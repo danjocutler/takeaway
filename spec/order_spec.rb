@@ -4,6 +4,7 @@ describe Order do
 	
 	let(:order) {Order.new}
 	let(:item) {Item.new}
+	let(:line_item) {double :line_item}
 
 	it "should add items to the customer's order" do
 		order.add("chips")
@@ -16,4 +17,5 @@ describe Order do
 		2.times {order.add("coke")}
 		expect(order.item_count).to eq 4
 	end
+
 end

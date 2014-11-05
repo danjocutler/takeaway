@@ -1,8 +1,9 @@
 # require 'twilio'
 
-# describe Twilio do
+
+# describe Text do
 	
-# 	let (:twilio) {Twilio.new}
+# 	let (:text) {Text.new}
 
 	
 # end
