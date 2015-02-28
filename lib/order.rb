@@ -4,12 +4,12 @@ class Order
 		@items = [] 
 	end
 
-	def add(item)
-		@items << item
+	def add(line_item)
+		@items << line_item
 	end
 
-	def item_count
-		@items.count
+	def total
+		@items.inject {line_item}
 	end
 
 end

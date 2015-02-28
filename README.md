@@ -1,6 +1,8 @@
 Takeaway
 ========
 
+[![Code Climate](https://codeclimate.com/github/danjocutler/takeaway/badges/gpa.svg)](https://codeclimate.com/github/danjocutler/takeaway)
+
 online takeaway and SMS service
 -------------------------------
 
